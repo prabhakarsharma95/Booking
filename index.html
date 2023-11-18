@@ -1,157 +1,266 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous"></script>
-    <script>
-    $(function() {
-    $(".toggle").on("click", function() {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
         if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
+          $(".item").removeClass("active");
         } else {
-            $(".item").addClass("active");
+          $(".item").addClass("active");
         }
+      });
     });
-});
-    </script>
+  </script>
 </head>
-<body onload="myFunction()" style="margin:0;">
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">Booking.Com</a></li>
-            <li class="item"><a href="#" class="nav-links">Home</a></li>
-            <li class="item"><a href="#" class="nav-links">About</a></li>
-            <li class="item"><a href="#service-section" class="nav-links">Services</a></li>
-            
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
 
-    <div id="loader"></div>
+<body>
 
-    <main >
-       
-    <div class="section-1">
-       
-        <div class="overlay">
-        </div>
-            <div class="main-background">
-                <img src="main.jpg" alt="">
-            </div>
-        
-        <div class="company-name">
-             <h1> Booking.Com</h1>
-        </div>
+  <!--Navigation Bar-->
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="#">Booking.Com</a></li>
+      <li class="item"><a href="#home" class="nav-links">Home</a></li>
+      <li class="item"><a href="#about-us" class="nav-links">About</a></li>
+      <li class="item"><a href="#service-section" class="nav-links">Services</a></li>
+
+      <li class="item button"><a href="#">Log In</a></li>
+      <li class="item button secondary"><a href="#">Sign Up</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+
+  <!--Main-->
+
+  <main>
+    <!--section-1 background-->
+
+    <div class="section-1" id="home">
+
+      <div class="overlay">
+      </div>
+      <div class="main-background">
+        <img src="main.jpg" alt="">
+      </div>
+
+      <div class="company-name">
+        <h1> Booking.Com</h1>
+      </div>
     </div>
-    <h1 class="our-services">Our Services</h1> 
-       <section class="services background" id="service-section">
-       
-        <div class="row">
-            
-            <div class = container>
-                <div class = card>
-                  <div class = image>
-                    <img href = "#" src = hotel.jpg alt="">
-                  </div>
-                  <h1>Hotel</h1>
-                  <div class = content>
-                    <h3>This is content</h3>
-                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                  </div>
-                </div>    
-              </div>
-    
-              <div class = container>
-                <div class = card>
-                  <div class = image>
-                    <img href = "#" src =    villa.jpg alt="">
-                  </div>
-                  <div class = content>
-                    <h3>This is content</h3>
-                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                  </div>
-                </div>    
-              </div>
-    
-              <div class = container>
-                <div class = card>
-                  <div class = image>
-                    <img href = "#" src =   rest.jpg alt="">
-                  </div>
-                  <div class = content>
-                    <h3>This is content</h3>
-                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                  </div>
-                </div>    
-              </div>
+    <h1 class="our-services">Our Services</h1>
+
+    <!--section-1 flexbox-->
+
+    <section class="services background" id="service-section">
+
+      <div class="row">
+
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src=hotel.jpg alt="">
+            </div>
+            <h1>Hotel Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+            </div>
+          </div>
         </div>
 
-    </section>    
-           
-    <section class="services background">
-       
-        <div class="row">
-            <div class = container>
-                <div class = card>
-                  <div class = image>
-                    <img href = "#" src = flight.jpg alt="">
-                  </div>
-                  <div class = content>
-                    <h3>This is content</h3>
-                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                  </div>
-                </div>    
-              </div>
-    
-              <div class = container>
-                <div class = card>
-                  <div class = image>
-                    <img href = "#" src = train.jpg alt="">
-                  </div>
-                  <div class = content>
-                    <h3>This is content</h3>
-                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                  </div>
-                </div>    
-              </div>
-    
-              <div class = container>
-                <div class = card>
-                  <div class = image>
-                    <img href = "#" src = cab.jpg alt="">
-                  </div>
-                  <div class = content>
-                    <h3>This is content</h3>
-                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-                  </div>
-                </div>    
-              </div>
-        </div>      
-           
-       
-       
-    </main>
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src=villa.jpg alt="">
+            </div>
+            <h1>Villas Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+            </div>
+          </div>
+        </div>
 
-    <!-- <script>
-        var myVar;
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src=rest.jpg alt="">
+            </div>
+            <h1>Restraunt Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--section-2 flexbox-->
+    </section>
+
+    <section class="services background">
+
+      <div class="row">
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src=flight.jpg alt="">
+
+            </div>
+            <h1>Flight Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src=train.jpg alt="">
+
+            </div>
+            <h1>Train Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src=cab.jpg alt="">
+
+            </div>
+            <h1>Cab Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--About US-->
+      <div class="about" id="about-us"><p>OUR TEAM</p></div>
+
+    <section class="cards cards-background">
+      <article class="card1 card--1">
+        <div class="card__img"></div>
+        <a href="#" class="card_link">
+           <div class="card__img--hover"></div>
+         </a>
+        <div class="card__info">
+          <span class="card__category"> Senior Manager</span>
+          <h3 class="card__title">he is a good leader</h3>
+          <span class="card__by">by <a href="#" class="card__author" title="author">RAM</a></span>
+        </div>
+      </article>
         
-        function myFunction() {
-          myVar = setTimeout(showPage, 3000);
-        }
         
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-        </script> -->
+      <article class="card1 card--2">
+       
+        <div class="card__img"></div>
+        <a href="#" class="card_link">
+           <div class="card__img--hover"></div>
+         </a>
+        <div class="card__info">
+          <span class="card__category"> Travel</span>
+          <h3 class="card__title">Discover the sea</h3>
+          <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+        </div>
+      </article>  
+
+      <article class="card1 card--2">
+       
+        <div class="card__img"></div>
+        <a href="#" class="card_link">
+           <div class="card__img--hover"></div>
+         </a>
+        <div class="card__info">
+          <span class="card__category"> Travel</span>
+          <h3 class="card__title">Discover the sea</h3>
+          <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+        </div>
+      </article>  
+        
+        
+        
+        </section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+
+   <div class="footer-item">
+    <h1>our offices</h1>
+    <ul>
+      <li>Pune</li>
+      <li>Maharastra</li>
+      <li>Delhi</li>
+      <li>Chandigarh</li>
+      <li>Benguluru</li>
+    </ul>
+   </div>
+
+   <div class="footer-item">
+    <h1>our offices</h1>
+    <ul>
+      <li>Pune</li>
+      <li>Maharastra</li>
+      <li>Delhi</li>
+      <li>Chandigarh</li>
+      <li>Benguluru</li>
+    </ul>
+   </div>
+
+  <div class="footer-item">
+    <h1>our offices</h1>
+    <ul>
+      <li>Pune</li>
+      <li>Maharastra</li>
+      <li>Delhi</li>
+      <li>Chandigarh</li>
+      <li>Benguluru</li>
+    </ul>
+   </div>
+  
+
+   <div class="footer-item">
+    <h1>our offices</h1>
+    <ul>
+      <li>Pune</li>
+      <li>Maharastra</li>
+      <li>Delhi</li>
+      <li>Chandigarh</li>
+      <li>Benguluru</li>
+    </ul>
+   </div>
+
+  </div>
+
+  <p class="copyright">Booking.Com<br>
+    Copyright © 2023 Booking, Inc.</p>
+  </footer>
 
 </body>
+
 </html>
