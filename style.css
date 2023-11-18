@@ -1,0 +1,390 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  nav {
+    background: #222;
+    padding: 5px 20px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .nav-links {
+    
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(aqua,   dodgerblue);
+    background-size: 0 100%, auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .2s ease-out;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-links:hover {
+    padding: 10px;
+    border-radius: 10px;
+  
+    /* color: #fff; */
+    background-size: 100% 100%, auto;
+  }
+  .logo a{
+    transition: letter-spacing 1s;
+  }
+  .logo a:hover {
+    text-decoration: none;
+    color: aqua;
+    letter-spacing: 5px;
+   
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+  
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+  
+    .logo {
+        flex: 1;
+    }
+  
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    .button.secondary a {
+        background: transparent;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    } 
+  }
+  
+  /* Desktop menu */
+  @media all and (min-width: 768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+  }
+ 
+   .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    opacity: 1;
+    transition: 1s;
+   }
+   .main-background img{
+   
+    width: 100%;
+    height: 100vh;
+   
+   
+   
+  }
+.section-1{
+    position:relative;
+  }
+  
+.company-name h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 7rem;
+    color: white;
+    font-weight:bold ;
+    z-index: 9;
+    transition: letter-spacing 1s;
+}
+.company-name h1:hover{
+color: aqua;
+letter-spacing: 5px;
+/* transition: 2s; */
+}
+.services{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+   
+}
+.our-services{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem 0px;
+    background-image: linear-gradient(to right, #04616E,#DC5356);
+}
+.background{
+width: 100%;
+background-image: linear-gradient(to right, #04616E,#DC5356);
+}
+.service{
+  width: 30%;
+  height: 350px;
+ 
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    flex: 1.0;
+    flex-grow: 1.0;
+}
+.container {
+    position : relative;
+    width : 100%;
+    display : flex;
+    flex: .5;
+    flex-grow: 0.5;
+    
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    flex-direction: column;
+    padding : 30px;  
+  }
+  
+  .container .card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color :#02aab0;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .container .card:hover {
+    height : 320px;    
+  }
+  
+  
+  .container .card .image {
+    position : relative;
+    width : 260px;
+    height : 260px;
+    
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container .card:hover .content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+  @media all and (max-width: 768px) {
+   
+    .company-name h1{
+      font-size: 3.5rem;
+    }
+    .row{
+        justify-content: center;
+    }
+  }
+
+
+  /* #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  /* .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }  */
+
+  .card h1{
+    position: absolute;
+    text-align: center;
+  }

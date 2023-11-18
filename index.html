@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">Booking.Com</a></li>
+            <li class="item"><a href="#" class="nav-links">Home</a></li>
+            <li class="item"><a href="#" class="nav-links">About</a></li>
+            <li class="item"><a href="#service-section" class="nav-links">Services</a></li>
+            
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <div id="loader"></div>
+
+    <main >
+       
+    <div class="section-1">
+       
+        <div class="overlay">
+        </div>
+            <div class="main-background">
+                <img src="main.jpg" alt="">
+            </div>
+        
+        <div class="company-name">
+             <h1> Booking.Com</h1>
+        </div>
+    </div>
+    <h1 class="our-services">Our Services</h1> 
+       <section class="services background" id="service-section">
+       
+        <div class="row">
+            
+            <div class = container>
+                <div class = card>
+                  <div class = image>
+                    <img href = "#" src = hotel.jpg alt="">
+                  </div>
+                  <h1>Hotel</h1>
+                  <div class = content>
+                    <h3>This is content</h3>
+                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+                  </div>
+                </div>    
+              </div>
+    
+              <div class = container>
+                <div class = card>
+                  <div class = image>
+                    <img href = "#" src =    villa.jpg alt="">
+                  </div>
+                  <div class = content>
+                    <h3>This is content</h3>
+                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+                  </div>
+                </div>    
+              </div>
+    
+              <div class = container>
+                <div class = card>
+                  <div class = image>
+                    <img href = "#" src =   rest.jpg alt="">
+                  </div>
+                  <div class = content>
+                    <h3>This is content</h3>
+                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+                  </div>
+                </div>    
+              </div>
+        </div>
+
+    </section>    
+           
+    <section class="services background">
+       
+        <div class="row">
+            <div class = container>
+                <div class = card>
+                  <div class = image>
+                    <img href = "#" src = flight.jpg alt="">
+                  </div>
+                  <div class = content>
+                    <h3>This is content</h3>
+                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+                  </div>
+                </div>    
+              </div>
+    
+              <div class = container>
+                <div class = card>
+                  <div class = image>
+                    <img href = "#" src = train.jpg alt="">
+                  </div>
+                  <div class = content>
+                    <h3>This is content</h3>
+                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+                  </div>
+                </div>    
+              </div>
+    
+              <div class = container>
+                <div class = card>
+                  <div class = image>
+                    <img href = "#" src = cab.jpg alt="">
+                  </div>
+                  <div class = content>
+                    <h3>This is content</h3>
+                    <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+                  </div>
+                </div>    
+              </div>
+        </div>      
+           
+       
+       
+    </main>
+
+    <!-- <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script> -->
+
+</body>
+</html>
